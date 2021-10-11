@@ -1,0 +1,77 @@
+@import url(./style.css);
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 170px;
+
+    background-color: var(--Black);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+}
+
+.footer-links .logo {
+    width: 40%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 120%;
+    margin-top: 2rem;
+
+    list-style: none;
+}
+
+.footer-nav a {
+    position: relative;
+
+    padding-bottom: .5rem;
+    text-decoration: none;
+}
+
+.social ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    width: 100%;
+
+    list-style: none;
+}
+
+.social li {
+    margin-left: 1rem;
+}
+
+.social a {
+    position: relative;
+
+    padding-bottom: .5rem;
+}
+
+.social a::before {
+    width: 100%;
+    left: 0;
+}
+
+.rights {
+    width: 100%;
+    margin-top: 2rem;
+
+    text-align: right;
+}
+
+.rights p, .footer-nav a {
+    color: var(--Dark-Gray);
+}
