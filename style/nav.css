@@ -1,0 +1,53 @@
+@import url(./style.css);
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    width: 100%;
+}
+
+.logo {
+    width: 10rem; 
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo a::before {
+    display: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+    width: 40%;
+}
+
+.nav-link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding-bottom: .5rem;
+    margin-left: 5px;
+
+    text-decoration: none;
+    color: var(--White);
+}
+
+.burger {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+}

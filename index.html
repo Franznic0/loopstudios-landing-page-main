@@ -7,6 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/nav.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/mobile.css">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -15,7 +19,9 @@
 
   <nav>
     <div class="logo">
-      <img src="./images/logo.svg" alt="Loopstudios logo">
+      <a href="./index.html">
+        <img src="./images/logo.svg" alt="Loopstudios">
+      </a>
     </div>
 
     <ul class="header-nav">
@@ -51,15 +57,73 @@
 
     </ul>
 
+    <div class="burger">
+      <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#FFF" fill-rule="evenodd">
+          <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/>
+        </g>
+      </svg>
+    </div>
+    
+    <div class="mobile-menu">
+      <div class="head-menu">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/logo.svg" alt="Loopstudios">
+          </a>
+        </div>
+
+        <svg id="close-button" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" fill="#FFF" fill-rule="evenodd"/>
+        </svg>
+      </div>
+      
+  
+      <ul class="mobile-nav">
+        <li>
+          <a class="nav-link-mobile" href="">
+            About
+          </a>
+        </li>
+  
+        <li>
+          <a class="nav-link-mobile" href="">
+            Careers
+          </a>
+        </li>
+  
+        <li>
+          <a class="nav-link-mobile" href="">
+            Events
+          </a>
+        </li>
+  
+        <li>
+          <a class="nav-link-mobile" href="">
+            Products
+          </a>
+        </li>
+  
+        <li>
+          <a class="nav-link-mobile" href="">
+            Support
+          </a>
+        </li>
+  
+      </ul>
+  
+    </div>
+
   </nav>
 
+
   <main>
-    <header class="intro">
+    <section class="intro">
       <h1 class="intro-message">
         Immersive experiences that deliver
       </h1>
 
-    </header>
+    </section>
 
     <section class="description">
       <img src="./images/desktop/image-interactive.jpg" alt="Man with VR visor">
@@ -86,7 +150,7 @@
           Our creations
         </h2>
 
-        <a href="">
+        <a id="button-fullscreen" class="see-all" href="">
           See all
         </a>
 
@@ -96,8 +160,8 @@
         <div class="products-links earth">
           <a href="">
             <h3 class="product-name">
-            Deep Earth
-          </h3>
+              Deep Earth
+            </h3>
           </a>
           
         </div>
@@ -105,8 +169,8 @@
         <div class="products-links arcade">
           <a href="">
             <h3 class="product-name">
-            Night Arcade
-          </h3>
+              Night Arcade
+            </h3>
           </a>
           
         </div>
@@ -114,8 +178,8 @@
         <div class="products-links soccer">
           <a href="">
             <h3 class="product-name">
-            Soccer Team VR
-          </h3>
+              Soccer Team VR
+            </h3>
           </a>
           
         </div>
@@ -123,8 +187,8 @@
         <div class="products-links grid">
           <a href="">
             <h3 class="product-name">
-            The Grid
-          </h3>
+              The Grid
+            </h3>
           </a>
           
         </div>
@@ -132,8 +196,8 @@
         <div class="products-links vr">
           <a href="">
             <h3 class="product-name">
-            From lip above VR
-          </h3>
+              From lip above VR
+            </h3>
           </a>
           
         </div>
@@ -141,7 +205,7 @@
         <div class="products-links borealis">
           <a href="">
             <h3 class="product-name">
-            Pocket borealis
+              Pocket borealis
             </h3>
           </a>
         </div>
@@ -149,8 +213,8 @@
         <div class="products-links curiosity">
           <a href="">
             <h3 class="product-name">
-            The curiosity
-          </h3>
+              The curiosity
+            </h3>
           </a>
           
         </div>
@@ -165,93 +229,103 @@
         </div>
 
       </div>
+
+      <a id="button-mobile" class="see-all" href="">
+        See all
+      </a>
       
     </section>
 
-    <footer>
-      <div class="footer-links">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="Loopstudios Logo">
-        </div>
-
-        <ul class="footer-nav">
-          <li>
-            <a href="">
-              About
-            </a>
-          </li>
     
-          <li>
-            <a href="">
-              Careers
-            </a>
-          </li>
-    
-          <li>
-            <a href="">
-              Events
-            </a>
-          </li>
-    
-          <li>
-            <a href="">
-              Products
-            </a>
-          </li>
-    
-          <li>
-            <a href="">
-              Support
-            </a>
-          </li>
-    
-        </ul>
-      </div>
-
-      <div class="social">
-        <ul>
-          <li>
-            <a class="facebook" href="">
-              <img src="./images/icon-facebook.svg" alt="Facebook logo">
-            </a>
-          </li>
-
-          <li>
-            <a class="twitter" href="">
-              <img src="./images/icon-twitter.svg" alt="Twitter logo">
-            </a>
-          </li>
-
-          <li>
-            <a class="pinterest" href="">
-              <img src="./images/icon-pinterest.svg" alt="Pinterest logo">
-            </a>
-          </li>
-
-          <li>
-            <a class="instagram" href="">
-              <img src="./images/icon-instagram.svg" alt="Instagram logo">
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="rights">
-          <p>
-            © 2021 Loopstudios. All rights reserved.
-          </p>
-        </div>
-
-      </div>
-
-    </footer>
-
   </main>
+  
+  <footer>
+    <div class="footer-links">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Loopstudios">
+        </a>
+      </div>
 
+      <ul class="footer-nav">
+        <li>
+          <a href="">
+            About
+          </a>
+        </li>
+  
+        <li>
+          <a href="">
+            Careers
+          </a>
+        </li>
+  
+        <li>
+          <a href="">
+            Events
+          </a>
+        </li>
+  
+        <li>
+          <a href="">
+            Products
+          </a>
+        </li>
+  
+        <li>
+          <a href="">
+            Support
+          </a>
+        </li>
+  
+      </ul>
+    </div>
+
+    <div class="social">
+      <ul>
+        <li>
+          <a class="facebook" aria-label="Facebook" href="">
+            <img src="./images/icon-facebook.svg" alt="" aria-hidden="true">
+          </a>
+        </li>
+
+        <li>
+          <a class="twitter" aria-label="Twitter" href="">
+            <img src="./images/icon-twitter.svg" alt="" aria-hidden="true">
+          </a>
+        </li>
+
+        <li>
+          <a class="pinterest" aria-label="Pinterest" href="">
+            <img src="./images/icon-pinterest.svg" alt="" aria-hidden="true">
+          </a>
+        </li>
+
+        <li>
+          <a class="instagram" aria-label="Instagram" href="">
+            <img src="./images/icon-instagram.svg" alt="" aria-hidden="true">
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="rights">
+        <p>
+          © 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Franznic0" target="_blank">Francesco Nicolosi</a>.
   </div>
+
+
+<script src="./js/app.js"></script>
 
 </body>
 
